@@ -1,6 +1,7 @@
 window.onload = function () {
     let form = document.getElementById("form");
     form.addEventListener("submit", logSubmit);
+    form.onload = changeTotalPrice();
 
 }
 
