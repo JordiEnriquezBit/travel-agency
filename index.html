@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+
+</head>
+<body>
+    <main>
+        <form id="form" action="" method="" style="border: 1px solid;">
+        <fieldset>
+            <legend>Hotel</legend>
+            
+            <p >Numero de noches: </p>
+            <input  id="numberHotel" type="number" onchange="changeHoteles()"  min="1" max="50"  value="1" >
+            <p>Price: <span id="priceHotel">60</span></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vuelo</legend>
+            
+            <p >Destino: </p>
+            <select name="vueloSelect" id="vueloSelect" onchange="changeVuelos()">
+                <option value="0" disabled selected>Destino</option>
+                <option value="180">Paris</option>
+                <option value="600">Boston</option>
+                <option value="120">Londres</option>
+            </select>            
+            <p>Price: <span id="priceVuelo">0</span></p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Coche</legend>
+            
+            <p >Numero de dias: </p>
+            <input  id="numberCoche" type="number" min="1" max="50"  value="1"  onchange="changeCoche()">
+            <p>Price: <span id="priceCoche">0</span></p>
+
+        </fieldset>
+            <p>Total price: <span id="totalPrice">0</span></p>
+       <input type="submit">
+        </form>
+    </main>
+</body>
+</html>
